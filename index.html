@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" href="./css/styles.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="auth-form">
+            <div class="auth-form__head">Hello</div>
+            <div class="auth-form__form">
+                <div class="auth-form-body__title">For business enquiries please use the form below</div>
+                <div class="auth-form-body__required required">*Required</div>
+                <form name="formWithValidation" onsubmit="return validate()">
+                    <label for="name" class="required label">Name*</label>
+                    <input type="text" name="name" >
+
+                    <label for="surname" class="required">Company*</label>
+                    <input type="text" name="company" >
+
+                    <label for="email" class="required">E-mail*</label>
+                    <input type="email" name="email" >
+
+                    <label for="phone" class="required">Phone</label>
+                    <input type="text" name="phone">
+
+                    <label for="subject" class="required">Subject</label>
+                    <input type="text" name="subject">
+
+                    <label for="message" class="required">Message*</label>
+                    <textarea type="text" name="message"></textarea>
+
+                    <div class="accept">
+                        <input type="checkbox" class="required" name="tpp" required>
+                        <label for="tpp" class="required">I accept <a href="/" style="color:#B9BEE5;">Terms and Privacy
+                                Policy</a></label>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit" class="submit validateBtn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
